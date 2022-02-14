@@ -26,6 +26,6 @@ describe("UserService", () => {
     await userService.login("abc", "abc"); // 로그인을 한 다음에
     await userService.login("abc", "abc"); // 또 다시 로그인을 한다면
 
-    expect(login.mock.calls.length).toBe(1); // 그래도 login 클라이언트는 딱 한번만 호출되어야 겠지
+    expect(login.mock.calls.length).toBe(1); // 첫 로그인 할 때에만 client는 딱 한번만 호출되어야 겠지
   });
 });
